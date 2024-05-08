@@ -1,0 +1,282 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;    
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a span {
+    margin-right: 5px;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+}
+
+
+
+
+main {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.popular-heading {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+
+
+.product-cards {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    width: calc(20% - 20px);
+    height: calc(20% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin-top: 0;
+    text-align: center;
+    color: #000;
+}
+
+.price{
+    text-align: left;
+}
+
+.card p {
+    margin-bottom: 5px;
+    color: gray;
+    text-align: center;
+    font-weight: 700;
+}
+
+.price{
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+}
+
+.price>span{
+    padding-left: 10px;
+    color: #484848;
+}
+
+.card-icon{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.stars{
+    color: gold;
+    font-size: 24px;
+    display: flex;
+}
+
+.star{
+    display: flex;
+    width: 60%;
+    cursor:help;
+}
+
+.star>span{
+    color: #000;
+    padding-top:3px ;
+}
+
+ .delete{
+    margin-top: 5px;
+    margin-left: 50px;
+ }
+
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .card{
+    width: calc(40% - 20px);
+    margin:20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    }
+
+    .price{
+        font-size: 20px;
+    }
+
+    .product-cards{
+        justify-content: center;
+    }
+
+    .popular-heading {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        margin-top: 0;
+    }
+}   
+
+
+@media(min-width: 1200px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    
+}
+
+.d1 input{
+    height:40px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid black;
+    width: 300px;
+}
+.d1 button{
+    height: 44px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: #333;
+}
+.foot{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.foot span {
+    color: #ffffff;
+    font-size: 20px;
+}
+.foot img{
+    width: 30px;
+    height: 30px;
+}
+.ez{
+    height: 200px;
+}
+.delete img{
+    height: 20px;
+    width: 20px;
+}
